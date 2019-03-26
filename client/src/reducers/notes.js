@@ -9,7 +9,7 @@ export const getNotes = (cb) => {
     return (dispatch) => {
         axios.get(`/api/notes`)
             .then( response => dispatch({ type: NOTES, notes: response.data }))
-            .then(cb)
+            .then( cb )
     }
 }
 
